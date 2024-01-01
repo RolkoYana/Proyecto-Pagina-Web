@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    background-color: white;
+}
+
+header{
+    background-color: #ffe700;
+}
+
+header h1{
+    font-size: 100px;
+
+}
+
+header img{
+    width: 125px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
