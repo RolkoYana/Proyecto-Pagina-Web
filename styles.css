@@ -27,3 +27,22 @@ header img{
     top: 0;
     right: 0;
 }
+
+nav{
+    background-color: gray;
+    padding: 10px;
+}
+
+li{
+    display: inline;
+    font-size: 14px;
+    margin-right: 10px;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
