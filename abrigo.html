@@ -5,7 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rab Microlight Apline Jacket</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <style type="text/css">
 
+        .title{
+            width: 100%;
+            font-size: xx-large;
+            padding: 15px 0px;
+            margin-bottom:10px;
+        }
+
+        .title img{
+            width: 200px;
+            height: auto;
+            float: right;
+            position: absolute;
+            top:30%;
+            right: 5%;
+        }
+
+        .foto img{
+            width: 500px;
+            height:auto;
+            margin: 30px 30px;
+            float: left;
+        }
+
+        aside{
+            width: 500px;
+            float: right;
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        
+        .info{
+            width:400px;
+            display: table;
+            margin-bottom: 30px;
+            border-collapse: collapse;
+            border: 1px solid gray;
+        }
+
+        .color{
+            font-size: large;
+            display: table-cell;
+            vertical-align:middle;
+            padding:5px;
+        }
+
+        .talla{
+            font-size: large;
+            display: table-cell;
+            vertical-align:middle;
+            padding: 5px;
+        }
+
+        .lista-tallas{
+            width: 150px;
+            padding: 3px;
+            font-size: large;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .precio{
+            font-size: xx-large;
+            color: darkred;
+            font-weight: bolder;
+            display: table-cell;
+            vertical-align:middle;
+            text-align: center;
+            line-height: 1;
+            padding: 5px;
+        }
+
+        .envios{
+            font-size: medium;
+            color: green;
+            font-weight: bold;
+            display: table-cell;
+            vertical-align:middle;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .cookies{
+            font-size: small;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .boton{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .cesta{
+            background-color: #ffe700;
+            font-size: medium;
+            padding: 7px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .tabla-tallas caption{
+            font-size: x-large;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .tabla-tallas{
+            font-size: medium;
+            display: table;
+            height:150px;
+            border-collapse: collapse;
+            border: 0.5px solid gray;
+        }
+
+        .header{
+            background-color:#3e4444;
+            color: white;
+            font-size: large;
+        }
+
+        .tabla-tallas td{
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            padding: 5px;
+            font-size: small;
+        }
+
+        .descripcion{
+            float: right;
+        }
+
+        .descripcion h1{
+            font-weight: bold;
+        }
+
+        .descripcion p{
+            padding: 0;
+            text-align: justify;
+        }
+/*
+        .descripcion ul{
+            list-style-type: circle;
+            line-height: 16px;
+        }
+        */
+        
+
+    </style>
 </head>
 
 <body>
@@ -30,17 +186,64 @@
         </ul>
     </nav>
 
-    <main>
-        <p><span>Rab </span> Microlight Alpine Jacket</p>
+    <section class="title">
+        <p><strong>Rab </strong> Microlight Alpine Jacket</p>
         <figure>
             <img src="images/Rab.png" alt="logo Rab">
         </figure>
-        <figure>
-            <img src="images/abrigo2.jpg" alt="abrigo Rab"> 
-        </figure>
-        <table border>
-            <caption>Tallas RAB Chaquetas Hombre</caption>
+    </section>
+        
+
+    <figure class="foto">
+        <img src="images/rab.jpg" alt="abrigo Rab"> 
+    </figure>
+
+    <aside>
+        <table class="info">
             <tr>
+                <td class="color">
+                    <p><strong>Color: </strong> Black</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="talla">
+                    <p><strong>Talla: </strong>        
+                        <select class="lista-tallas" name="talla">
+                            <option>Elige un valor</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option>XL</option>
+                        </select>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="precio">
+                    <p>203.35 €</p>
+                    <p><span style="font-size: medium;  font-weight: lighter; text-decoration: line-through; color: black;">260.00 € &nbsp;</span> <span style="font-size: medium; font-weight: lighter; color: darkred;"> &nbsp; (-22%)</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td class="envios">
+                    <p>¡ENVÍOS Y DEVOLUCIONES GRATIS!</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="cookies">
+                    <p>Antes de continuar tienes que aceptar las cookies básicas, necesarias para poder comprar.</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="boton"> 
+                    <input type="button" class="cesta" name="boton" value="AÑADIR A LA CESTA">
+                </td>
+            </tr>
+        </table>
+        
+        <table class="tabla-tallas">
+            <caption>Tallas RAB Chaquetas Hombre</caption>
+            <tr class="header">
                 <td>TALLA</td>
                 <td>XXS</td>
                 <td>XS</td>
@@ -80,26 +283,33 @@
                 <td>91</td>
                 <td>91</td>
             </tr>
-
         </table>
-    </main>
+    </aside>
+        
 
-    <section>
+    <div class="descripcion">
         <h1>Descripción del producto "Microlight Alpine Jacket"</h1>
         <acticle>
             <p>
-                Chaqueta rellena de pluma con capucha de la marca Rab. Nueva versión con materiales reciclados de esta prenda ligera y cálida, que aporta el máximo aislamiento al frío con el mínimo peso.
+                Chaqueta rellena de pluma con capucha de la marca <strong>Rab.</strong> Nueva versión con materiales reciclados de esta prenda ligera y cálida, que aporta el máximo aislamiento al frío con el mínimo peso. <br><br>
             
-                La chaqueta Microlight Alpine está confeccionada con tejido exterior Pertex® Quantum con nylon de 30 deniers y 50 g/m², un material reciclado extremadamente fino y tupido que le permite tener propiedades cortavientos para conservar mejor la temperatura. Este tejido se completa con el tratamiento DWR (Durable Water Repellent, repelencia duradera al agua) que permite soportar la nieve y una fina lluvia sin problemas. Gracias a este material la durabilidad y resistencia de la prenda está asegurada.
+                La chaqueta <strong>Microlight Alpine</strong> está confeccionada con tejido <strong>exterior Pertex® Quantum</strong> con nylon de 30 deniers y 50 g/m², un material reciclado extremadamente fino y 
+                tupido que le permite tener propiedades cortavientos para conservar mejor la temperatura. Este tejido se completa con el tratamiento DWR (Durable Water Repellent, repelencia duradera al agua) que 
+                permite soportar la nieve y una fina lluvia sin problemas. Gracias a este material la durabilidad y resistencia de la prenda está asegurada. <br><br>
             
-                El aislamiento térmico lo proporciona un relleno de 153 gramos de plumón (para la talla L) reciclado de ganso europeo con una capacidad de hinchado de 700 FP; esto significa que una onza (28 gramos) de pluma de esta calidad tiene, cuando no está sometida a ninguna presión, una capacidad de ocupar 700 cuin (cubic inches, pulgadas cúbicas) u 11,5 litros de volumen aproximadamente. A la pluma se le ha dado un tratamiento hidrófugo Nikwaw para evitar que la humedad afecte a sus capacidades aislantes. Cuenta con el certificado RDS (Responsible Down Standard, Estandar responsable de plumón) que garantiza que en toda la cadena de extracción del plumón se ha garantizado no infligir daño innecesario a los animales como desplume en vida o alimentación forzada.
+                El aislamiento térmico lo proporciona un relleno de <strong>153 gramos de plumón</strong> (para la talla L) reciclado de ganso europeo con una <strong>capacidad de hinchado de 700 FP;</strong> esto 
+                significa que una onza (28 gramos) de pluma de esta calidad tiene, cuando no está sometida a ninguna presión, una capacidad de ocupar 700 cuin (cubic inches, pulgadas cúbicas) u 11,5 litros de volumen 
+                aproximadamente. A la pluma se le ha dado un <strong>tratamiento hidrófugo Nikwaw</strong> para evitar que la humedad afecte a sus capacidades aislantes. Cuenta con el certificado RDS 
+                (Responsible Down Standard, Estandar responsable de plumón) que garantiza que en toda la cadena de extracción del plumón se ha <strong>garantizado no infligir daño innecesario a los animales</strong> como desplume en vida o alimentación forzada.<br><br>
                 
-                La Microlight Alpine Jacket cuenta con estructura en micro tabiques y nano tabiques que minimiza la migración de la pluma y provee un óptimo reparto de la misma evitando los puntos fríos, lo que junto a la capucha fija convierte a esta chaqueta en una perfecta opción cuando la calidez, el peso y la compactibilidad son primordiales. El tabicado y el tejido interior se realiza en nylon reciclado de 20 deniers, con 38 gramos por metro cuadrado de peso.
+                La Microlight Alpine Jacket cuenta con estructura en micro tabiques y nano tabiques que minimiza la migración de la pluma y provee un óptimo reparto de la misma evitando los puntos fríos, lo que junto 
+                a la capucha fija convierte a esta chaqueta en una perfecta opción cuando la calidez, el peso y la compactibilidad son primordiales. El tabicado y el tejido interior se realiza en nylon reciclado de 20 deniers, con 38 gramos por metro cuadrado de peso.<br><br>
                 
-                Cremalleras YKK en los bolsillos laterales y el bolsillo de pecho. Terminaciones elásticas en los puños para un mejor ajuste y bajo ajustable con cordón. Capucha con visera incorporada. Peso aproximado de 467 gramos.
+                Cremalleras YKK en los bolsillos laterales y el bolsillo de pecho. Terminaciones elásticas en los puños para un mejor ajuste y bajo ajustable con cordón. Capucha con visera incorporada. <strong>Peso aproximado de 467 gramos.</strong><br><br>
                 
-                Características:
-                <ul> 
+                <strong>Características:</strong>
+
+                <ul>
                     <li>Modelo actualizado con materiales reciclados.</li>
                     <li>Modelo para hombre.</li>
                     <li>Corte ajustado.</li>
@@ -118,23 +328,13 @@
                     <li>Bajo ajustable con cordón.</li>
                     <li>Peso aproximado de 466,5 g.</li>
                 </ul>
-               
             </p>
+           
         </acticle>
-    </section>
 
-    <aside>
-        <p><span>Color: </span> Black</p><br>
-        <span>Talla: </span>
-        <select name="talla">
-            <option>S</option>
-            <option>M</option>
-            <option>L</option>
-            <option>XL</option>
-        </select>
-        <p>203.35 €</p>
-        <p>¡ENVÍOS Y DEVOLUCIONES GRATIS!</p>
-    </aside>
+    </div>
+
+    
     
     <footer>
         <div class="foot-1">
