@@ -5,6 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Barrabes</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+    <style type="text/css">
+
+        main{
+            width: 100%;
+        }
+
+        main h1{
+            font-family: 'Andika';
+            margin-left: 10px;
+        }
+
+        [class*="news-"]{
+            margin-top: 10px;
+            padding: 5px;
+            width: 50%;
+        }
+
+        .news-1{
+            float: left;
+        }
+
+        .news-1 iframe{
+            width: 100%;
+            height:350px;
+            margin: 10px 0px 10px 0px;
+        }
+
+        .news-1 h3{
+            margin-bottom: 10px;
+        }
+
+        [class*="news-"] p{
+            padding: 0;
+            text-align: justify;
+        }
+
+        [class*="news-"] a{
+            text-decoration: none;
+            color: black;
+        }
+
+        [class*="news-"] a:hover{
+            color:gray;
+        }
+
+        .news-2{
+            float: right;
+        }
+
+        .news-2 img{
+            width: 100%;
+            height: 350px;
+            margin: 10px 0px 10px 0px;
+        }
+
+        .news-2 h3{
+            margin-bottom: 10px;
+        }
+
+
+        .noticias{
+            width: 50%;
+            clear: both;
+            float:left;
+        }
+
+        .noticias h2{
+            font-family: 'Andika';
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        .noticias hr{
+            border: 1.5px solid gray;
+            margin-right: 15px;
+        }
+
+        .noticias > ul img{
+            width:250px;
+            height:150px;
+            margin: 15px 15px 15px 0px;
+        }
+
+        .noticias > ul div{
+            width: 50%;
+            float: right;
+            line-height: 1.5;
+            margin-top: 15px;
+            padding-right: 15px;
+        }
+
+        .consejos{
+            width: 50%;
+            float:right;
+        }
+
+        .consejos h2{
+            font-family: 'Andika';
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+
+        .consejos hr{
+            border: 1.5px solid gray;
+            margin-right: 15px;
+        }
+        .consejos > ul img{
+            width:250px;
+            height:150px;
+            margin: 15px 15px 15px 0px;
+        }
+
+        .consejos > ul div{
+            width: 50%;
+            float: right;
+            line-height: 1.5;
+            margin-top: 15px;
+            padding-right: 15px;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -29,23 +151,22 @@
 
     <main>
         <h1>Blog de Montaña</h1>
-       <section>
+       <section class="news-1">
         <acticle>
-            <header>Edu Marín, Valhalla, Cielo de Roca. 9A+, 360m. Pelicula completa</header>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/A_5Zy_paGr0?si=-7ohSbhMc_uEO4J2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <a href="https://www.barrabes.com/blog/noticias/2-12031/edu-marin-valhalla-cielo-roca">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/A_5Zy_paGr0?si=-7ohSbhMc_uEO4J2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>Edu Marín, Valhalla, Cielo de Roca. 9A+, 360m. Pelicula completa</h3>    
             </a>
             <p>
                 La odisea que supuso colocar los bolts y liberar Valhalla es difícil de imaginar. Probablemente la vía más monstruosa del mundo, escalada en China por Edu Marin con la ayuda de padre y su hermano.
-                El 20 de marzo de 2019, Edu Marin anunciaba el encadenamiento de Valhalla, tras 2 años de trabajo, siempre acompañado y apoyado por su padre, Franciso “Novato” Marín, y su hermano, Alex Marín. La vía se sitúa en el Gran Arco de Getu, en China, quizás el mayor del planeta, tiene 14 largos, y la parte horizontal se sitúa a 150 metros del suelo.
             </p>
             </acticle>
        </section>
-       <section>
+       <section class="news-2">
         <article>
-            <header>Mont Blanc, 4808m. 4 rutas hacia cima</header>
+            <img src="images/Mont Blanc.jpg" alt="Mont Blanc">
             <a href="https://www.barrabes.com/blog/reportajes/2-10058/mont-blanc-4808m-4-rutas">
-                <img src="images/Mont Blanc.jpg" alt="Mont Blanc">
+                <h3>Mont Blanc, 4808m. 4 rutas hacia cima</h3>
             </a>
             <p>
                 La cima más alta de los Alpes es un reto que, al menos una vez en la vida, todo montañero se plantea. En este artículo explicamos 4 rutas para llegar hasta su cima: Goûter, la Vía del Papa, la Ruta de los Cuatromiles y la Aiguille de Bionnassay.
@@ -53,6 +174,74 @@
         </article>
        </section>
     </main>
+
+    <section class="noticias">
+        <h2>Noticias</h2>
+        <hr>
+        <ul>
+            <li>
+                <a href="https://www.barrabes.com/blog/noticias/2-12028/alex-txikon-navidad-campo-2">
+                    <img src="images/noticia-1.jpg">
+                </a>
+                <div>
+                    <h3>Alex Txikon: Navidad en campo 2 del Annapurna. ¿Hacia cima?</h3>
+                    <p>Actividad en el Annapurna. Tras dar comienzo el invierno astrónomico, Alex Txikon y su equipo, en apenas ...</p>
+                </div> 
+            </li>
+            <li>
+                <a href="https://www.barrabes.com/blog/noticias/2-12027/jonatan-garcia-nueva-via-aneto">
+                    <img src="images/noticia-2.jpg">
+                </a>
+                <div>
+                    <h3>Jonatan García, nueva vía en Aneto. Saca la frontal, 200m, 80º, M7, A1</h3>
+                    <p>De nuevo una aperturam en este caso invernal, en el Aneto para Jonatan Garcá, con Rubén Martínez. La ...</p>
+                </div>
+            </li>
+            <li>
+                <a href="https://www.barrabes.com/blog/noticias/2-12025/alex-txikon-listo-annapurna-invernal">
+                    <img src="images/noticia-3.jpg">
+                </a>
+                <div>
+                    <h3>Alex Txikon, listo para el Annapurna inerval tras intento en Chulu Fat East</h3>
+                    <p>Continúa la aclimatación de Alex Txikon de cara a su intento invernal al Annapurna. Intento al Chulu</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="consejos">
+        <h2>Consejos</h2>
+        <hr>
+        <ul>
+            <li>
+                <a href="https://www.barrabes.com/blog/consejos/2-10767/como-elegir-mascara-ventisca-esqui">
+                    <img src="images/consejo-1.jpg">
+                </a>
+                <div>
+                    <h3>Cómo elegir tu máscara de ventisca para esquí y alpinismo</h3>
+                    <p>Las máscaras de esquí son un elemento fundamental para proteger nuestros ojos cuando el viento, la nieve ...</p>
+                </div>
+            </li>
+            <li>
+                <a href="https://www.barrabes.com/blog/consejos/2-10201/botas-esqui-travesia-freeride-elegir">
+                    <img src="images/consejo-2.jpg">
+                </a>
+                <div>
+                    <h3>¿Qué botas de esquí de travesía y freeride elegir? Tipos y conceptos</h3>
+                    <p>Aquí te explicamos de principio a fin todo lo que necesites saber sobre las botas de esquí de travesía ...</p>
+                </div>
+            </li>
+            <li>
+                <a href="https://www.barrabes.com/blog/consejos/2-12026/sistema-boa-botas-esqui-ajuste">
+                    <img src="images/consejo-3.jpg">
+                </a>
+                <div>
+                    <h3>Sistema BOA para botas de esquí. El ajuste perfecto al instante</h3>
+                    <p>En un sistema de ajuste fácil, rápido, preciso y seguro. LLeva muchos años en el mundo del calzado depostivo ...</p>
+                </div>
+            </li>
+        </ul>
+    </section>
 
 
     <footer>
